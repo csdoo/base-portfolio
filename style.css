@@ -198,10 +198,32 @@ nav a:hover {
     gap: 15px;
 }
 
-.projects-gallery img {
+.projects-gallery a {
+    display: block;
+    position: relative;
+    z-index: 0;
+}
 
+.projects-gallery img {
     width: 100%;
     display: block;
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 260ms cubic-bezier(.2,.8,.2,1);
+}
+
+.projects-gallery a:hover,
+.projects-gallery a:focus-visible {
+    z-index: 2;
+}
+
+.projects-gallery a:hover img,
+.projects-gallery a:focus-visible img {
+    transform: scale(1.07);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .projects-gallery img { transition: none; }
 }
 
 /* FOOTER */
@@ -230,4 +252,59 @@ footer {
 .rodape-texto a:hover {
 
     color:#fbff00;
+}
+
+
+/* PROJETO EM DESTAQUE — MESMA HIERARQUIA DAS PÁGINAS INTERNAS */
+.last-project {
+    align-items: flex-start;
+}
+
+.project-content > p:first-child {
+    color: #ff0077;
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    margin-bottom: 18px;
+}
+
+.project-content h2 {
+    color: #1100fa;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: .92;
+    letter-spacing: -.07em;
+    margin: 12px 0 28px;
+}
+
+.project-content > p:nth-of-type(2) {
+    color: #ff0077;
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    margin-bottom: 18px;
+}
+
+.project-frist-p {
+    max-width: 760px;
+    font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+    line-height: 1.45;
+    margin-bottom: 18px;
+}
+
+.project-second-p {
+    max-width: 760px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.project-content p { margin-bottom: 0; }
+
+@media (max-width: 760px) {
+    .last-project {
+        flex-direction: column;
+        gap: 28px;
+        padding-inline: 24px;
+    }
+    .project-content h2 { font-size: clamp(3rem, 12vw, 5rem); }
+    .project-image { width: 100%; }
 }
