@@ -308,3 +308,78 @@ footer {
     .project-content h2 { font-size: clamp(3rem, 12vw, 5rem); }
     .project-image { width: 100%; }
 }
+
+/* CARROSSEL DE PROJETOS EM DESTAQUE */
+.last-project {
+    display:block;
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 60px;
+}
+.featured-carousel { position:relative; }
+.featured-slide {
+    display:none;
+    grid-template-columns:minmax(0,1fr) minmax(280px,.9fr);
+    gap:clamp(28px,5vw,60px);
+    align-items:center;
+}
+.featured-slide.is-active { display:grid; }
+.featured-slide .project-content { min-width:0; }
+.featured-slide .project-image img {
+    width:100%;
+    aspect-ratio:500 / 760;
+    object-fit:cover;
+    display:block;
+}
+.featured-slide .project-content h2 {
+    color:#1100fa;
+    font-size:clamp(2.8rem,5.2vw,5.2rem);
+    line-height:1.06;
+    letter-spacing:-.045em;
+    margin:16px 0 30px;
+}
+.featured-slide .project-content > p:first-child,
+.featured-slide .project-content > p:nth-of-type(2) {
+    color:#ff0077;
+    font-size:.95rem;
+    font-weight:700;
+    letter-spacing:.06em;
+}
+.featured-slide .project-frist-p {
+    font-size:clamp(1.2rem,2.2vw,1.7rem);
+    line-height:1.45;
+    margin:18px 0;
+}
+.featured-slide .project-second-p { font-size:1.02rem; line-height:1.65; }
+.featured-visit {
+    display:inline-block;
+    margin-top:24px;
+    color:#1100fa;
+    font-weight:700;
+    text-decoration:none;
+    border-bottom:2px solid #ff0077;
+    padding-bottom:5px;
+}
+.featured-controls {
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:28px;
+}
+.featured-controls button {
+    width:42px;
+    height:42px;
+    border:0;
+    background:#1100fa;
+    color:#fff;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+.featured-controls button:hover { background:#ff0077; }
+.featured-counter { color:#1100fa; font-weight:700; font-size:.9rem; }
+@media(max-width:760px) {
+    .last-project { padding-inline:24px; }
+    .featured-slide.is-active { grid-template-columns:1fr; }
+    .featured-slide .project-image { width:min(100%,480px); margin-inline:auto; }
+    .featured-slide .project-content h2 { font-size:clamp(2.8rem,12vw,4.8rem); }
+}
