@@ -383,3 +383,90 @@ footer {
     .featured-slide .project-image { width:min(100%,480px); margin-inline:auto; }
     .featured-slide .project-content h2 { font-size:clamp(2.8rem,12vw,4.8rem); }
 }
+
+
+/* ARTIGOS */
+.articles {
+    background-color: #d5d5d1;
+    padding: clamp(48px, 7vw, 88px) 60px;
+    margin-top: 100px;
+}
+.articles-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.articles-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+    color: #1100fa;
+}
+.articles-heading h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.045em;
+}
+.articles-heading p {
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+.article-strip {
+    display: block;
+    padding: clamp(22px, 4vw, 42px);
+    background: #ff0077;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 220ms ease, transform 260ms cubic-bezier(.2,.8,.2,1);
+}
+.article-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .07em;
+}
+.article-arrow {
+    font-size: 2rem;
+    line-height: 1;
+}
+.article-strip h3 {
+    max-width: 900px;
+    font-size: clamp(1.8rem, 4.5vw, 3.8rem);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+.article-strip p {
+    max-width: 680px;
+    margin-top: 18px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.5;
+}
+.article-strip:hover,
+.article-strip:focus-visible {
+    background: #1100fa;
+    transform: scale(1.012);
+}
+.article-strip:focus-visible {
+    outline: 3px solid #1100fa;
+    outline-offset: 4px;
+}
+@media (max-width: 760px) {
+    .articles {
+        padding: 48px 24px;
+        margin-top: 72px;
+    }
+    .articles-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .article-strip { transition: none; }
+}
