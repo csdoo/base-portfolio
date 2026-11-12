@@ -71,27 +71,22 @@
         </div>
     </section>
 
-    <section class="projects"> 
-        <div class="projects-gallery">
-            <a href="projeto-1.html">
-                <img src="imagem/project-1.png" alt="imagem bala fruit-tella">
-            </a>
-            <a href="projeto-2.html">
-                <img src="imagem/project-2.png" alt="imagem latinha bala altoids">
-            </a>
-            <a href="projeto-3.html">
-                <img src="imagem/project-3.png" alt="imagem lata fanta laranja">
-            </a>
-            <a href="projeto-4.html">
-                <img src="imagem/project-4.png" alt="imagem chocolate snickers">
-            </a>
-            <a href="projeto-5.html">
-                <img src="imagem/project-5.png" alt="imagem hidratante labial nivea">
-            </a>
-            <a href="projeto-6.html">
-                <img src="imagem/project-6.png" alt="imagem panqueca estilizada">
-            </a> 
+    <section class="projects" aria-label="Projetos">
+        <div class="projects-carousel" id="projects-carousel">
+            <button class="projects-arrow projects-prev" type="button" aria-label="Projetos anteriores">←</button>
+            <div class="projects-viewport">
+                <div class="projects-gallery">
+                    <a href="projeto-1.html"><img src="imagem/project-1.png" alt="Projeto Fruit-tella"></a>
+                    <a href="projeto-2.html"><img src="imagem/project-2.png" alt="Projeto Altoids"></a>
+                    <a href="projeto-3.html"><img src="imagem/project-3.png" alt="Projeto Fanta"></a>
+                    <a href="projeto-4.html"><img src="imagem/project-4.png" alt="Projeto Snickers"></a>
+                    <a href="projeto-5.html"><img src="imagem/project-5.png" alt="Projeto Nivea"></a>
+                    <a href="projeto-6.html"><img src="imagem/project-6.png" alt="Projeto visual de panqueca"></a>
+                </div>
+            </div>
+            <button class="projects-arrow projects-next" type="button" aria-label="Próximos projetos">→</button>
         </div>
+        <div class="projects-pagination" aria-label="Selecionar projeto"></div>
         <h2>"projetos"</h2>
     </section>
 
@@ -125,5 +120,6 @@
 </footer>
 
 <script src="featured-carousel.js" defer></script>
+<script src="projects-carousel.js" defer></script>
 </body>
 
