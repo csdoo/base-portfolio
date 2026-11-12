@@ -91,14 +91,14 @@ nav a:hover {
 
     font-size: 40px;
     white-space: nowrap;
-    padding-right: 50px;
+    padding-right: 15px;
 }
 
 .track span {
 
     font-size: 80px;
     white-space: nowrap;
-    padding-right: 50px;
+    padding-right: 15px;
 }
 
 @keyframes marquee {
