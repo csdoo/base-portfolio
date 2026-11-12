@@ -313,9 +313,16 @@ footer {
 /* CARROSSEL DE PROJETOS EM DESTAQUE */
 .last-project {
     display:block;
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:60px  max(24px, calc((100% - 1320px) / 2));
+    background-color:#d5d5d1;
+}
+.featured-carousel {
+    position:relative;
     max-width:1200px;
-    margin:80px auto;
-    padding:0 60px;
+    margin:0 auto;
 }
 .featured-carousel { position:relative; }
 .featured-slide {
@@ -379,7 +386,7 @@ footer {
 .featured-controls button:hover { background:#ff0077; }
 .featured-counter { color:#1100fa; font-weight:700; font-size:.9rem; }
 @media(max-width:760px) {
-    .last-project { padding-inline:24px; }
+    .last-project { padding:40px 24px; }
     .featured-slide.is-active { grid-template-columns:1fr; }
     .featured-slide .project-image { width:min(100%,480px); margin-inline:auto; }
     .featured-slide .project-content h2 { font-size:clamp(2.8rem,12vw,4.8rem); }
