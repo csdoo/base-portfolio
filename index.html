@@ -39,25 +39,35 @@
         </div>
     </div>
 
-    <section class="last-project">
-         <div class="project-content">
-            <p>10/06/2026</p>
-           <div class="project-title">
-                <h2>PROVE QUE VOCÊ NÃO É UM ROBÔ</h2>
+    <section class="last-project" aria-label="Projetos em destaque">
+        <div class="featured-carousel" id="featured-carousel">
+            <article class="featured-slide is-active" aria-hidden="false">
+                <div class="project-content">
+                    <p>10/06/2026</p>
+                    <div class="project-title"><h2>PROVE QUE VOCÊ NÃO É UM ROBÔ</h2></div>
+                    <p><span>PROJETO DESENVOLVIDO PARA O CRIA SENAC 2026</span></p>
+                    <div class="project-frist-p"><p>Uma experiência interativa que transforma o captcha — ferramenta criada para distinguir pessoas de máquinas — em uma pergunta sobre o que nos torna humanos.</p></div>
+                    <div class="project-second-p"><p>Entre imagens ambíguas, erros e validações impossíveis, o projeto investiga como a inteligência artificial interpreta o mundo e onde começam os limites dessa leitura.</p></div>
+                    <a class="featured-visit" href="https://simonato.design/captcha/" target="_blank" rel="noopener">EXPERIMENTAR O PROJETO ↗</a>
+                </div>
+                <div class="project-image"><a href="https://simonato.design/captcha/" target="_blank" rel="noopener"><img src="imagem/last-project.png" alt="Captura visual do projeto interativo Prove que você não é um robô"></a></div>
+            </article>
+            <article class="featured-slide" aria-hidden="true" inert>
+                <div class="project-content">
+                    <p>PROJETO AUTORAL · WEB DESIGN</p>
+                    <div class="project-title"><h2>UM UNIVERSO PARA COELHOS</h2></div>
+                    <p><span>INFORMAÇÃO, CUIDADO E CULTURA DIGITAL</span></p>
+                    <div class="project-frist-p"><p>Um guia digital que reúne raças, curiosidades e orientações sobre o cuidado responsável com coelhos.</p></div>
+                    <div class="project-second-p"><p>Com uma linguagem visual inspirada na estética de interfaces retrô, o site transforma conteúdo educativo em uma experiência gráfica, direta e cheia de personalidade.</p></div>
+                    <a class="featured-visit" href="https://csdoo.github.io/coelhos/" target="_blank" rel="noopener">VISITAR O SITE ↗</a>
+                </div>
+                <div class="project-image"><a href="https://csdoo.github.io/coelhos/" target="_blank" rel="noopener"><img src="imagem/coelhos-project.svg" alt="Arte de apresentação do site Coelhos, com fundo azul, tipografia monoespaçada e ilustração de um coelho branco"></a></div>
+            </article>
+            <div class="featured-controls">
+                <button type="button" class="featured-prev" aria-label="Projeto anterior">←</button>
+                <span class="featured-counter" aria-live="polite">01 / 02</span>
+                <button type="button" class="featured-next" aria-label="Próximo projeto">→</button>
             </div>
-           <p><span>PROJETO DESENVOLVIDO PARA O CRIA SENAC 2026 </span></p>
-           <div class="project-frist-p">
-                <p>Experiência interativa que utiliza a lógica dos captchas para questionar como identificamos humanidade, realidade e autenticidade em ambientes digitais. </p>
-            </div>
-            <div class="project-second-p">
-                <p>Através de imagens ambíguas e validações impossíveis, o projeto transforma um mecanismo cotidiano da internet em uma reflexão sobre inteligência artificial, representação e interpretação.</p>
-            </div>
-        </div>
-        <div 
-        class="project-image">
-            <a href="https://simonato.design/captcha/">      
-             <img src="imagem/last-project.png" alt="imagem do ultimo projeto realizado">
-            </a>
         </div>
     </section>
 
@@ -97,5 +107,6 @@
     </section>
 </footer>
 
+<script src="featured-carousel.js" defer></script>
 </body>
 
