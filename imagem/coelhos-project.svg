@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="760" viewBox="0 0 500 760">
+<defs><linearGradient id="blue" x2="0" y2="1"><stop stop-color="#0800ff"/><stop offset="1" stop-color="#1600e8"/></linearGradient><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" opacity=".55"/></pattern></defs>
+<rect width="500" height="760" fill="url(#blue)"/>
+<g fill="#fff" font-family="monospace">
+<text x="28" y="46" font-size="17" letter-spacing="2">COELHOS / GUIA DIGITAL</text>
+<path d="M28 62H472" stroke="#fff" stroke-width="2"/>
+<text x="24" y="180" font-size="90" font-weight="bold" letter-spacing="-6">COELHOS</text>
+<text x="28" y="222" font-size="20">RAÇAS, CURIOSIDADES</text><text x="28" y="248" font-size="20">E ALIMENTAÇÃO</text>
+<text x="28" y="300" font-size="14">Um guia digital sobre coelhos:</text><text x="28" y="322" font-size="14">conheça diferentes raças,</text><text x="28" y="344" font-size="14">curiosidades e cuidados essenciais.</text>
+</g>
+<g transform="translate(300 370)">
+<ellipse cx="10" cy="140" rx="132" ry="125" fill="#fff"/>
+<ellipse cx="-45" cy="-5" rx="32" ry="112" transform="rotate(-12 -45 -5)" fill="#fff"/>
+<ellipse cx="30" cy="-14" rx="32" ry="120" transform="rotate(16 30 -14)" fill="#fff"/>
+<ellipse cx="-45" cy="-7" rx="12" ry="73" transform="rotate(-12 -45 -7)" fill="#f5b9bd"/>
+<ellipse cx="30" cy="-16" rx="12" ry="80" transform="rotate(16 30 -16)" fill="#f5b9bd"/>
+<circle cx="-36" cy="92" r="8" fill="#111"/><path d="M-54 128q18 16 34 0" fill="none" stroke="#d89b9b" stroke-width="4"/>
+</g>
+<g fill="none" stroke="#fff" stroke-width="2"><rect x="25" y="515" width="210" height="105"/><rect x="250" y="515" width="225" height="105"/><rect x="25" y="635" width="450" height="70"/></g>
+<g fill="#fff" font-family="monospace"><text x="42" y="550" font-size="18">RAÇAS</text><text x="42" y="582" font-size="13">HOLLAND LOP · LIONHEAD</text><text x="42" y="602" font-size="13">MINI LOP · BLACK OTTER</text><text x="268" y="550" font-size="18">CUIDADOS</text><text x="268" y="582" font-size="13">ALIMENTAÇÃO</text><text x="268" y="602" font-size="13">BEM-ESTAR</text><text x="42" y="677" font-size="18">CONHECER TAMBÉM É CUIDAR.</text></g>
+<path d="M390 735h85" stroke="#fff" stroke-width="5"/><path d="M455 722l20 13-20 13" fill="none" stroke="#fff" stroke-width="4"/>
+</svg>
